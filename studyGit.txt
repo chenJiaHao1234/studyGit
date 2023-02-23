@@ -1,22 +1,35 @@
 一、git常用命令
-初始化本地库命令： git init
+1.初始化本地库命令： git init
 
-查看本地库状态命令：git status
+2.查看本地库状态命令：git status
 
-将文件添加到暂存区命令：git add 文件名
+3.将文件添加到暂存区命令：git add 文件名
 
-将文件提交到本地库命令：git commit -m "日志信息(备注)" 文件名
+4.将文件提交到本地库命令：git commit -m "日志信息(备注)" 文件名
 
-查看提交的历史版本： git reflog   || 查看历史版本详细信息：git log
+5.查看提交的历史版本： git reflog   || 查看历史版本详细信息：git log
 
-版本穿梭：git reset --hard 版本号
+6.版本穿梭：git reset --hard 版本号
 
 
 二、 分支
-创建分支：git branch 分支名
+1.创建分支：git branch 分支名
 
-查看分支：git branch -v
+2.查看分支：git branch -v
 
-切换分支：git checkout 分支名
+3.切换分支：git checkout 分支名
 
-把指定的分支合并到当前分支上：git merge 分支名
+4.合并分支：git merge 分支名    理解为把哪个分支合并到当前分支
+
+
+三、GitHub操作
+1.查看当前所有远程地址别名：git remote -v
+
+2.给远程地址起别名：git remote add 别名 远程地址
+理解为： let 别名 = 远程地址
+
+3.推送本地分支上的内容到远程仓库：git push 别名 分支
+
+4.将远程仓库的内容克隆到本地： git clone 远程地址
+
+5.将远程仓库对于分支最新内容拉下来后与当前本地分支直接合并： git pull 
